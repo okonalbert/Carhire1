@@ -1,0 +1,281 @@
+/*General*/
+body {
+	font-family: 'Nunito Sans', sans-serif;
+	font-style: inline;
+	font-size: initial;
+	font-smoothing: always;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+}
+
+a {
+	text-decoration: none;
+	-moz-transition: all linear .3s;
+	-webkit-transition: all linear .3s;
+	-o-transition: all linear .3s;
+	transition: all linear .3s;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+
+.container {
+	position: relative;
+	z-index: 3;
+}
+
+/*Header*/
+/*Top nav left*/
+.top-nav {
+	;
+	color: #333;
+	line-height: 40px;
+	border-bottom: 1px solid #01b1d7;
+}
+
+/*Top Right Menu*/
+.top-right {
+	float: right;
+}
+
+
+/*Nagivation*/
+#main-nav {
+	padding: 15px 0;
+}
+
+/*Affix*/
+#main-nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255,255,255,0.9);
+    color: #fff;
+    z-index:10;
+	-moz-box-shadow: 0 1px 2px #ebebeb;
+	-webkit-box-shadow: 0 1px 2px #ebebeb;
+	box-shadow: 0 5px 5px rgba(0,0,0,.15);
+    transition: all 0.3s;
+}
+
+.navbar {
+	margin:0;
+}
+
+#main-nav .navbar-header a {
+	background-color: #01b1d7;
+	color: #fff;
+}
+/*Toggle Menu*/
+#main-nav .navbar-toggle {
+	background-color: #01b1d7;
+}
+
+#main-nav .navbar-toggle span {
+	background-color: #fff;
+}
+
+/*Main Menu*/
+#main-nav .navbar-right {
+	margin-top: 10px;
+}
+#main-nav .navbar-right li > a {
+	font-family: 'Raleway', sans-serif;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 30px;
+	color: #555;
+	padding-top: 0;
+	padding-bottom: 0;
+	text-transform: uppercase;
+}
+
+#main-nav .navbar-right li > a:focus {
+	color: #01b1d7;
+    background: none;
+    outline: none;
+}
+
+#main-nav .navbar-nav>li>a:hover,
+#main-nav .navbar-nav>li.active>a {
+	color: #01b1d7;
+    background: none;
+}
+
+/*Search Form*/
+.search-form {
+	padding: 10px;
+	position: absolute;
+	bottom: -76px;
+	right: 15px;
+	z-index: 3;
+	background: #fff;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .5s linear;
+	-moz-box-shadow: 0 1px 2px #ebebeb;
+	-webkit-box-shadow: 0 1px 2px #ebebeb;
+	box-shadow: 0 1px 2px #ebebeb;
+}
+
+.search-form.visible {
+	visibility: visible;
+	opacity: 1;
+}
+
+.search-form input {
+	height: 40px;
+	width: 275px;
+	border-color: #e8e8e8;
+}
+
+/*Main Slider*/
+#slider {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+.flexslider {
+	border: 0;
+}
+.country_p{
+	text-align: center;
+	border-bottom: 2px solid #000;
+	width: 85%;
+	font-size: 20px;
+	font-family: Nunito Sans;
+	font-style: italic;
+	font-weight: 400;
+	line-height: normal;
+	margin-left: auto;
+	margin-right: auto;
+}
+.nigeriaText img {
+	display: inline-block;
+	width: 50px;
+}
+#slider.flexslider .slides img{
+	max-height: 400px;
+}
+
+.media1{
+	padding-top: 30px;
+	padding-bottom: 5px;
+	margin: 20px auto 20px auto;
+	width: 85%;
+}
+figure img{
+	vertical-align: middle;
+	padding-top: 30px;
+}
+
+/*Media*/
+@media screen and (min-width: 320px) and (max-width: 520px) {
+	#slider .caption {
+		position: absolute;
+		width: 400px;
+		top: 55%;
+	}
+
+	#slider .caption h2 {
+		font-size: 15px;
+	}
+
+	#slider .caption p {
+		font-size: 10px;
+		font-style: italic;
+		margin: 0;
+		padding: 0;
+		color: #01b1d7;
+	}
+
+	#slider .caption .btn {
+		width: 80px;
+	    height: 20px;
+		font-size: 10px;
+		margin-top: 5px;
+		padding: 0;
+	}
+}
+
+/*Media*/
+@media screen and (min-width: 521px) and (max-width: 980px) {
+	#slider .caption {
+		position: absolute;
+		width: 450px;
+		top: 50%;
+	}
+
+	#slider .caption h2 {
+		font-size: 24px;
+	}
+
+	#slider .caption p {
+		font-size: 16px;
+		font-style: italic;
+		margin-top: 15px;
+		color: #01b1d7;
+	}
+
+	#slider .caption .btn {
+		width: 110px;
+	    height: 30px;
+		font-size: 12px;
+		margin-top: 15px;
+
+	}
+}
+
+
+/*Service*/
+#country {
+	margin-top: 40px;
+	background-attachment: scroll;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+#country .col-md-6 {
+	padding: 0;
+	
+}
+.countryName {
+	margin-bottom: 20px;
+}
+.states{
+	list-style: none;
+	font-family: Nunito Sans;
+	font-style: italic;
+	font-weight: 300;
+	line-height: normal;
+	font-size: 18px;
+	color: #000000;
+	margin-bottom: 15px;
+}
+#lagos {
+	color: green;
+	font-weight: bold;
+	font-family: 'Nunito Sans', sans-serif;
+}
+.address {
+	font-family: 'Nunito Sans', sans-serif;
+	font-style: italic;	
+}
+#cat {
+	color: #007BCA;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
