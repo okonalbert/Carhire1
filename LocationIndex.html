@@ -11,13 +11,326 @@
 	<link rel="stylesheet" href="css/flexslider.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/style.css">
+
+<style type="text/css">
+	/*General*/
+body {
+	font-family: 'Nunito Sans', sans-serif;
+	font-style: inline;
+	font-size: initial;
+	font-smoothing: always;
+	/-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+}
+
+a {
+	text-decoration: none;
+	-moz-transition: all linear .3s;
+	-webkit-transition: all linear .3s;
+	-o-transition: all linear .3s;
+	transition: all linear .3s;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.navbar.navbar-default.navbar-fixed-bottom{
+                
+                background-color: #fff;
+              }
+.container {
+	position: relative;
+	z-index: 3;
+}
+
+/*Header*/
+/*Top nav left*/
+.top-nav {
+	;
+	color: #333;
+	line-height: 40px;
+	border-bottom: 1px solid #01b1d7;
+}
+
+/*Top Right Menu*/
+.top-right {
+	float: right;
+}
+
+
+/*Nagivation*/
+#main-nav {
+	padding: 15px 0;
+}
+
+/*Affix*/
+#main-nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255,255,255,0.9);
+    color: #fff;
+    z-index:10;
+	-moz-box-shadow: 0 1px 2px #ebebeb;
+	-webkit-box-shadow: 0 1px 2px #ebebeb;
+	box-shadow: 0 5px 5px rgba(0,0,0,.15);
+    transition: all 0.3s;
+}
+
+.navbar {
+	margin:0;
+}
+
+#main-nav .navbar-header a {
+	background-color: #01b1d7;
+	color: #fff;
+}
+/*Toggle Menu*/
+#main-nav .navbar-toggle {
+	background-color: #01b1d7;
+}
+
+#main-nav .navbar-toggle span {
+	background-color: #fff;
+}
+
+/*Main Menu*/
+#main-nav .navbar-right {
+	margin-top: 10px;
+}
+#main-nav .navbar-right li > a {
+	font-family: 'Raleway', sans-serif;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 30px;
+	color: #555;
+	padding-top: 0;
+	padding-bottom: 0;
+	text-transform: uppercase;
+}
+
+#main-nav .navbar-right li > a:focus {
+	color: #01b1d7;
+    background: none;
+    outline: none;
+}
+
+#main-nav .navbar-nav>li>a:hover,
+#main-nav .navbar-nav>li.active>a {
+	color: #01b1d7;
+    background: none;
+}
+
+/*Search Form*/
+.search-form {
+	padding: 10px;
+	position: absolute;
+	bottom: -76px;
+	right: 15px;
+	z-index: 3;
+	background: #fff;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .5s linear;
+	-moz-box-shadow: 0 1px 2px #ebebeb;
+	-webkit-box-shadow: 0 1px 2px #ebebeb;
+	box-shadow: 0 1px 2px #ebebeb;
+}
+
+.search-form.visible {
+	visibility: visible;
+	opacity: 1;
+}
+
+.search-form input {
+	height: 40px;
+	width: 275px;
+	border-color: #e8e8e8;
+}
+
+/*Main Slider*/
+#slider {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+.flexslider {
+	border: 0;
+}
+.country_p{
+	text-align: center;
+	border-bottom: 2px solid #000;
+	width: 85%;
+	font-size: 20px;
+	font-family: Nunito Sans;
+	font-style: italic;
+	font-weight: 400;
+	line-height: normal;
+	margin-left: auto;
+	margin-right: auto;
+}
+.nigeriaText img {
+	display: inline-block;
+	width: 50px;
+}
+#slider.flexslider .slides img{
+	max-height: 400px;
+}
+
+.media1{
+	padding-top: 30px;
+	padding-bottom: 5px;
+	margin: 20px auto 20px auto;
+	width: 85%;
+}
+figure img{
+	vertical-align: middle;
+	padding-top: 30px;
+}
+
+/*Media*/
+@media screen and (min-width: 320px) and (max-width: 520px) {
+	#slider .caption {
+		position: absolute;
+		width: 400px;
+		top: 55%;
+	}
+
+	#slider .caption h2 {
+		font-size: 15px;
+	}
+
+	#slider .caption p {
+		font-size: 10px;
+		font-style: italic;
+		margin: 0;
+		padding: 0;
+		color: #01b1d7;
+	}
+
+	#slider .caption .btn {
+		width: 80px;
+	    height: 20px;
+		font-size: 10px;
+		margin-top: 5px;
+		padding: 0;
+	}
+
+/*Media*/
+@media screen and (min-width: 521px) and (max-width: 980px) {
+	#slider .caption {
+		position: absolute;
+		width: 450px;
+		top: 50%;
+	}
+
+	#slider .caption h2 {
+		font-size: 24px;
+	}
+
+	#slider .caption p {
+		font-size: 16px;
+		font-style: italic;
+		margin-top: 15px;
+		color: #01b1d7;
+	}
+	#slider .caption .btn {
+		width: 110px;
+	    height: 30px;
+		font-size: 12px;
+		margin-top: 15px;
+	}
+/*Service*/
+#country {
+	margin-top: 40px;
+	background-attachment: scroll;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+#country .col-md-6 {
+	padding: 0;
+	
+}
+.countryName {
+	margin-bottom: 20px;
+}
+.states{
+	list-style: none;
+	font-family: Nunito Sans;
+	font-style: italic;
+	font-weight: 300;
+	line-height: normal;
+	font-size: 18px;
+	color: #000000;
+	margin-bottom: 15px;
+}
+#lagos {
+	color: green;
+	font-weight: bold;
+	font-family: 'Nunito Sans', sans-serif;
+}
+.address {
+	font-family: 'Nunito Sans', sans-serif;
+	font-style: italic;	
+}
+#cat {
+	color: #007BCA;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+</style>
     
 </head>
 <body data-spy="scroll">
-	<?php include('header1.php') ?>
-	<!--top header-->
-
+	<nav class="navbar navbar-inverse ">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-    toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">Location</a></li>
+                <li><a href="#">Special Offers</a></li>  
+                <li><a href="#">Cars</a></li>  
+                <li><a href="#">Contact</a></li>  
+                <li><a href="#">Airport Transfer</a></li>   
+              </ul>
+            </div>
+          </div>
+              <!--second nav-->
+              <!--this nav is described with the center attribute-->
+        </nav>
+        <nav class="navbar nav2 navbar-default" 
+        id="nav2">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> 
+              </button>
+              
+            </div>
 	<header>
 
 		
@@ -25,10 +338,10 @@
 
 		<div id="main-nav">
 
-			<nav class="navbar">
+			<nav class="navbar navbar-default">
 				<div class="container">
 
-					<div class="navbar-header">
+					<div class="navbar-header navbar-default">
 						<img src="http://res.cloudinary.com/okonalbert/image/upload/v1507734598/image_2_ocptiw.png">
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ftheme">
 							<span class="sr-only">Toggle</span>
@@ -63,7 +376,7 @@
 	</header>
 
 	<!--slider-->
-	<div id="slider" class="flexslider">
+	<div id="slider" class="flexslider navbar-default">
 
         <!--<ul class="slides">
             <li>-->
@@ -223,9 +536,21 @@
 
 		<br>
 		<br>
-		<?php include('footer1.php') ?>
+
 	</div>
 </div>
+<footer>
+          <nav class="navbar navbar-default ">
+          <div class="container">
+            <div class="row">
+          <div class="col-sm-3 footer1" ><img class="center image1" src="http://res.cloudinary.com/siazo/image/upload/v1507562729/car_jyrdnk.png" height="50" width="140"><ul><li>About</li><li>Locations</li><li>Contact Us</li><li>Privacy Policy</li></ul></div>
+          <div class="col-sm-3 footer2" id="footer" ><span><b>Product & Services</b></span><ul><li>Vehicles</li><li>Drivers</li><li>Hire Advice</li><li>FAQs</li></ul></div>
+          <div class="col-sm-3 footer3" id="footer"><span><b>Our Partners</b></span><ul><li>Hotels.ng</li><li>FAAN</li></ul></div>
+          <div class="col-sm-3 footer4" id="footer"><span><b>Follow Us</b></span> <br><br><img src="http://res.cloudinary.com/siazo/image/upload/v1507639912/twitter-256_z1pfxb.png" height="50" width="50"><img src=""><img src="https://res.cloudinary.com/siazo/image/upload/v1507639847/linkedin_circle-512_hzqz6w.png"  height="50" width="50"><img src="https://res.cloudinary.com/siazo/image/upload/v1507639699/youtube_gm3o65.svg"  height="50" width="50"><img src="https://res.cloudinary.com/siazo/image/upload/v1507693557/facebook_ivkp0a.png"  height="50" width="50"></div>
+        </div>
+        </div>
+        <div class="center-block">2017-CarHire-All Rights Reserved </div>
+        </footer>
 			
 	<!-- jQuery -->
     <script src="js/jquery.min.js"></script>
